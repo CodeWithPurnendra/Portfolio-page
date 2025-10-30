@@ -5,6 +5,11 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   background: #f9f9f9;
@@ -64,7 +69,118 @@ body:not(:has(.nav-bar:in-view)) .nav-bar {
   transform: translateY(-2px);
 }
 
-.slider-text{
-  font-weight: 500;
-    margin-top: 16px;
+.hero-section {
+  position: relative;
+  min-height: 100vh;
+  display: grid; 
+  grid-template-rows: auto auto; 
+  justify-items: center;
+  text-align: center;
+  color: #fff;
+  overflow: hidden;
+  background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #a1c4fd, #c2e9fb);
+  background-size: 400% 400%;
+  animation: sunsetFlow 20s ease-in-out infinite;
+}
+
+@keyframes sunsetFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  25% {
+    background-position: 50% 75%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  75% {
+    background-position: 50% 25%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 50% 80%, rgba(255, 200, 150, 0.2), transparent 70%);
+  animation: glow 10s ease-in-out infinite alternate;
+  z-index: 0;
+}
+
+@keyframes glow {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 0.8;
+  }
+}
+
+.heading {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  padding: 0 1.5rem;
+  align-self: center;
+  margin-top: 13rem;
+}
+
+.main-heading {
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 1.3;
+  margin-bottom: 1rem;
+  text-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+.sub-heading {
+  font-size: 1.2rem;
+  font-weight: 400;
+  opacity: 0.95;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+/* Project Section */
+.project {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+  align-items: start;
+  width: 100%;
+  padding: 100px 60px;
+  z-index: 1;
+  margin-top: 8rem;
+}
+
+.project-info {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 2rem;
+  border-radius: 16px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  color: #fff;
+  max-width: 500px;
+}
+
+.project-info:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+}
+
+.project-info h3 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.project-info p {
+  font-size: 1rem;
+  color: #e8e8e8;
+  line-height: 1.6;
 }
