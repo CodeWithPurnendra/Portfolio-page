@@ -28,7 +28,7 @@ This project focuses on elegant design, smooth motion, and performance-friendly 
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/CodeWithPurnendra/portfolio.git
+     https://github.com/CodeWithPurnendra/Portfolio-page.git
    
 2. cd portfolio
 3. Run locally
