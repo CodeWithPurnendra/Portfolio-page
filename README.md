@@ -1,28 +1,43 @@
-# 🌐 Purnendra | Personal Portfolio Page
+# 🌐 Purnendra | Personal Portfolio Website
 
-A modern, minimal, and responsive **personal portfolio website** built entirely with **HTML and CSS** — no JavaScript required.  
-This project focuses on elegant design, smooth motion, and performance-friendly CSS art animations that bring creativity to life.
+A modern, minimal, and fully responsive **personal portfolio website** built using **HTML, CSS, and JavaScript**.  
+This project focuses on elegant UI/UX, smooth animations, and performance-friendly interactions to showcase skills, projects, and creativity effectively.
 
 ---
 
 ## ✨ Features
 
-- 🧭 **Sticky Navbar** — a semi-transparent, glassy navigation bar that becomes more solid as you scroll.  
-- 🖋️ **Kinetic Typography** — realistic, typewriter-style text animation in the hero section.  
-- 🌌 **CSS Particle Animation** — subtle floating particles in the background for a dynamic look.  
-- 💎 **Responsive Design** — adapts perfectly to desktops, tablets, and mobile devices.  
-- 🧩 **Zero JavaScript** — powered completely by CSS3 animations and effects.  
-- 🎨 **Modern UI/UX** — clean layout, smooth transitions, and professional spacing.
+- 🧭 **Sticky Navbar**  
+  Semi-transparent, glassmorphism-style navigation bar with smooth scroll behavior.
+
+- 🖋️ **Animated Hero Section**  
+  Typewriter-style text animation and engaging intro powered by JavaScript.
+
+- 🌌 **CSS Particle & Background Animations**  
+  Subtle floating particles and gradient effects for a dynamic visual experience.
+
+- ⚡ **JavaScript Interactions**  
+  - Smooth scrolling  
+  - Dynamic text animations  
+  - Interactive UI behavior  
+
+- 💎 **Fully Responsive Design**  
+  Optimized for desktops, tablets, and mobile devices.
+
+- 🎨 **Modern UI/UX**  
+  Clean layout, professional spacing, smooth transitions, and accessibility-friendly structure.
 
 ---
 
 ## 🧱 Tech Stack
 
-- **HTML5**
-- **CSS3 (Flexbox, Keyframes, backdrop-filter, :has() selector)**  
-- **Font:** [Poppins](https://fonts.google.com/specimen/Poppins)
+- **HTML5** — semantic and accessible markup  
+- **CSS3** — Flexbox, animations, transitions, glassmorphism  
+- **JavaScript (ES6)** — interactivity and dynamic behavior  
+- **Font** — [Poppins](https://fonts.google.com/specimen/Poppins)
 
 ---
+
 
 ## 🚀 Getting Started
 
