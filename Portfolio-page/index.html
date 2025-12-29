@@ -4,15 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="I'm Purnendra Nishad — a front-end developer and designer crafting beautiful, responsive, and user-focused digital experiences using HTML, CSS, Git, and GitHub. Explore my projects and skills.">
-    <meta name="keywords" content="Purnendra Nishad, Portfolio, Front-end Developer, Web Designer, HTML, CSS, Git, GitHub, UI/UX Design, Figma, Behance">
-    <meta name="author" content="Purnendra Nishad">
-
-    <title>Portfolio | Purnendra Nishad - Front-End Developer & Designer</title>
+    <meta name="description"
+        content="I'm Purnendra Kumar — a full stack development learner passionate about building responsive, user-friendly, and visually appealing web applications using modern web technologies.">
+    <meta name="keywords"
+        content="Purnendra Kumar, Portfolio, Full Stack Developer Learner, Front-end Developer, Web Developer, HTML, CSS, JavaScript, Git, GitHub">
+    <meta name="author" content="Purnendra Kumar">
+    <title>Portfolio | Purnendra Kumar - Full Stack Development Learner</title>
+    <link rel="shortcut icon" href="assets/icons/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-
 
 <body>
     <header class="nav-bar">
@@ -25,63 +26,159 @@
         </ul>
     </header>
 
+    <!-- Hero Section  -->
     <main class="hero-section">
         <section class="heading" id="home">
-            <h2 class="main-heading">Designing Experiences That Converts</h2>
-            <h3 class="sub-heading">I craft digital products and brands that don't just look beautiful- they drive
-                results and solve real business problems.</h3>
+            <h2 class="main-heading">Building Scalable & Meaningful Digital Experiences</h2>
+            <h3 class="sub-heading">
+                Hi, I'm <strong>Purnendra Kumar</strong> — a dedicated <strong>Full Stack Development Learner</strong>
+                with a strong
+                foundation in front-end technologies. I enjoy transforming ideas into clean, responsive, and
+                user-centric web
+                applications while continuously improving my skills to build efficient solutions for real-world
+                problems.
+            </h3>
+            <a href="#projects" class="cta-btn">View My Projects ↓</a>
         </section>
 
+        <!-- Project Section  -->
         <section class="project" id="projects">
             <div class="project-info">
-                <h3>🙇Tribute Page🙇</h3>
-                <p>A simple and responsive tribute website dedicated to Jensen Huang, the visionary co-founder and CEO
-                    of NVIDIA.This page highlights his life, achievements, and lasting contributions to the world of
-                    technology and artificial intelligence.</p>
+                <h3>🙇 Tribute Page 🙇</h3>
+                <p>
+                    A simple and responsive tribute website dedicated to Jensen Huang, the visionary co-founder and CEO
+                    of NVIDIA. This project highlights his life, achievements, and contributions to the technology and
+                    artificial intelligence industry using clean HTML and CSS.
+                </p>
             </div>
 
             <div class="project-info">
-                <h3>🩺Medical Survey Form🩺</h3>
-                <p>A Medical Survey Form is a responsive and accessible web form built using HTML and CSS.
-                    It is designed to collect essential medical information from patients or users in a clean,
-                    simple,and user-friendly way.This project focuses on layout desig accessibility, and responsive
-                    styling —making it suitable for healthcare professionals, researchers, or students learning
-                    front-end web development.</p>
+                <h3>🩺 Medical Survey Form 🩺</h3>
+                <p>
+                    A responsive and accessible medical survey form built using HTML and CSS. It is designed to collect
+                    essential medical information in a clean, simple, and user-friendly manner, focusing on proper
+                    layout, accessibility, and responsive design principles.
+                </p>
             </div>
         </section>
 
+        <!-- Skill Section  -->
         <section class="skills" id="skills">
             <h2>My Skills</h2>
+
             <div class="my-skills">
-                <div class="project-card">
+                <!-- Developer Skills -->
+                <div class="skill-card">
                     <h3>Developer Skills</h3>
-                    <i class="fa-brands fa-html5"></i>
-                    <i class="fa-brands fa-css3-alt"></i>
-                    <i class="fa-brands fa-git-alt"></i>
-                    <i class="fa-brands fa-github"></i>
+
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span><i class="fa-brands fa-html5"></i> HTML</span>
+                            <span class="percentage">90%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar html html-progress-bar" data-percentage="90"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span><i class="fa-brands fa-css3-alt"></i> CSS</span>
+                            <span class="percentage">85%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar css css-progress-bar" data-percentage="85"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span><i class="fa-brands fa-js"></i> JavaScript</span>
+                            <span class="percentage">70%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar js js-progress-bar" data-percentage="70"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span><i class="fa-brands fa-git-alt"></i> Git</span>
+                            <span class="percentage">75%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar git git-progress-bar" data-percentage="75"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span><i class="fa-brands fa-github"></i> GitHub</span>
+                            <span class="percentage">80%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar github github-progress-bar" data-percentage="80"></div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class=" project-card design-skills">
+                <!-- Designing Skills -->
+                <div class="skill-card design-skills">
                     <h3>Designing Skills</h3>
-                    <i class="fa-brands fa-figma"></i>
-                    <i class="fa-brands fa-behance"></i>
+
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span><i class="fa-brands fa-figma"></i> Figma</span>
+                            <span class="percentage">65%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar figma figma-progress-bar" data-percentage="65"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span><i class="fa-brands fa-behance"></i> Behance</span>
+                            <span class="percentage">60%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar behance behance-progress-bar" data-percentage="60"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-    </main>
 
-    <footer class="contact" id="contact">
-        <h2>Contact Me</h2>
-        <div class="contact-info">
-            <a href="https://github.com/CodeWithPurnendra" target="_blank"><i class="fa-brands fa-github"></i>Github</a>
+        <!-- Contact Section -->
+        <footer class="contact" id="contact">
+            <h2>Contact Me</h2>
 
-            <address class="address">
-            <p>purnendranishad5@gamil.com</p>
-            <p>📍India, Chattisgarh</p>
-            <p>Balod, 491227</p>
-        </address>
-        </div>
-    </footer>
+            <p class="contact-intro">
+                I'm always open to learning opportunities, collaborations, and meaningful conversations.
+                Feel free to reach out if you'd like to work together or just say hello.
+            </p>
+
+            <div class="contact-info">
+                <a href="https://github.com/CodeWithPurnendra" target="_blank">
+                    <i class="fa-brands fa-github"></i> Github
+                </a>
+
+                <a href="mailto:purnendranishad5@gmail.com">
+                    <i class="fa-solid fa-envelope"></i> Email Me
+                </a>
+
+                <address class="address">
+                    <p>📧 purnendranishad5@gmail.com</p>
+                    <p>📍 India, Chhattisgarh</p>
+                    <p>Balod, 491227</p>
+                </address>
+            </div>
+              <br>
+            <p class="contact-footer-text">
+                © 2025 Purnendra Kumar · Built with HTML,CSS & JS
+            </p>
+        </footer>
+        <script src="script.js"></script>
 </body>
 
 </html>

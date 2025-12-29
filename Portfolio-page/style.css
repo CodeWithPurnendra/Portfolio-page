@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -42,10 +41,9 @@ body {
   font-family: monospace;
 }
 
-
 main:has(section:in-view) .nav-bar,
 body:not(:has(.nav-bar:in-view)) .nav-bar {
-  background: rgba(0, 0, 0, 0.85); 
+  background: rgba(0, 0, 0, 0.85);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
@@ -108,7 +106,6 @@ body:not(:has(.nav-bar:in-view)) .nav-bar {
   z-index: 1;
 }
 
-
 .heading {
   position: relative;
   z-index: 1;
@@ -131,6 +128,24 @@ body:not(:has(.nav-bar:in-view)) .nav-bar {
   font-weight: 400;
   opacity: 0.95;
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+.cta-btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 28px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: #fff;
+  background: #222;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.cta-btn:hover {
+  background: #ff5722;
+  transform: translateY(-3px);
 }
 
 /* Project Section */
@@ -175,6 +190,8 @@ body:not(:has(.nav-bar:in-view)) .nav-bar {
   line-height: 1.6;
 }
 
+/* Skill Section */
+
 .skills {
   color: #fff;
   padding: 100px 20px;
@@ -184,64 +201,162 @@ body:not(:has(.nav-bar:in-view)) .nav-bar {
   text-align: center;
 }
 
+/* Heading */
+
 .skills > h2 {
   font-size: 2.8rem;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   color: #f9f9f9;
   font-weight: 700;
-  text-align: center;
+  letter-spacing: 5px;
+  border-bottom: 3px solid rgb(44, 207, 4);
+  padding-bottom: 10px;
+}
+
+.skill-card > h3{
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #f9f9f9;
+  font-weight: 500;
   letter-spacing: 5px;
 }
 
+/* Grid Layout */
 .my-skills {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 40px;
-  width: 100%;
-  max-width: 1000px;
+  grid-template-rows: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 30px;
   margin-top: 80px;
 }
 
-.project-card {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 24px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-  padding: 50px 30px;
-  backdrop-filter: blur(10px);
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
+/* =======================
+   INDIVIDUAL SKILL CARD
+======================= */
+
+.skill-item {
+  border-radius: 16px;
+  margin-bottom: 20px;
+  padding: 22px 20px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+  width: 50vw;
 }
 
-.project-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 0 40px rgba(255, 255, 255, 0.15);
+.skill-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.5);
 }
 
-.project-card h3 {
-  font-size: 1.8rem;
-  color: #ffffffa9;
-  margin-bottom: 25px;
+.skill-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
   font-weight: 600;
 }
 
-.project-card i {
-  font-size: 3rem;
-  margin: 15px 25px;
-  transition: transform 0.3s ease, color 0.3s ease;
-  cursor: pointer;
+
+/* Icon + Name */
+.skill-header span {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-.project-card i:hover {
+/* Icons */
+.skill-header i {
+  font-size: 1.6rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.skill-item:hover i {
   transform: scale(1.2);
 }
+.progress {
+  width: 100%;
+  height: 8px;
+  background: #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 6px;
+}
 
-.fa-html5 { color: #e44d26; }
-.fa-css3-alt { color: #1572b6; }
-.fa-git-alt { color: #f1502f; }
-.fa-github { color: #ffffff; }
-.fa-figma { color: #f24e1e; }
-.fa-behance { color: #1769ff; }
+.html-progress-bar {
+  height: 100%;
+  border-radius: 10px;
+  background: #e44d26;;
+}
 
+.css-progress-bar {
+  height: 100%;
+  border-radius: 10px;
+  background: #1572b6;
+}
+
+.js-progress-bar {
+  height: 100%;
+  border-radius: 10px;
+  background: #f7df1e;
+}
+
+.git-progress-bar {
+  height: 100%;
+  border-radius: 10px;
+  background: #f1502f;
+}
+
+.github-progress-bar {
+  height: 100%;
+  border-radius: 10px;
+  background: rgb(122, 2, 235);
+}
+
+.figma-progress-bar {
+  height: 100%;
+  border-radius: 10px;
+  background: #f24e1e;
+}
+
+.behance-progress-bar {
+  height: 100%;
+  border-radius: 10px;
+  background: #1769ff;
+}
+
+.skill-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.percentage {
+  font-weight: 200;
+  font-size: 1.2rem;
+  color: #07f012;
+}
+
+.fa-html5 {
+  color: #e44d26;
+}
+.fa-css3-alt {
+  color: #1572b6;
+}
+.fa-js {
+  color: #f7df1e;
+}
+.fa-git-alt {
+  color: #f1502f;
+}
+.fa-github {
+  color: #ffffff;
+}
+.fa-figma {
+  color: #f24e1e;
+}
+.fa-behance {
+  color: #1769ff;
+}
 
 @media (max-width: 768px) {
   .my-skills {
@@ -265,30 +380,70 @@ body:not(:has(.nav-bar:in-view)) .nav-bar {
   }
 }
 
-.contact{
-  background-color: #222222e0;
-}
+/* =======================
+   CONTACT SECTION
+======================= */
 
-.contact > h2{
-  color: #f9f9f9;
+.contact {
+  padding: 80px 20px;
+  background: #0f0f0f;
+  color: #fff;
   text-align: center;
-  font-size: 2.8rem;
+  width: 100vw;
+  height: 78vh;
 }
 
-.contact-info > a{
-    display: flex;
-    flex-direction: row;
-    gap: 4px;
-    justify-content: center;
-    text-decoration: none;
-    font-size: 1em;
-    margin-top: 8px;
-    color: #f9f9f9;
+/* Heading */
+.contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 35px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  display: inline-block;
+  padding-bottom: 10px;
 }
-.address{
-  color: #f9f9f9;
+
+/* Wrapper */
+.contact-info {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  align-items: center;
+}
+
+/* GitHub link (button-like but flat) */
+.contact-info a {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #fff;
   text-decoration: none;
-  text-align: center;
-  margin-top: 10px;
-  line-height: 2;
+  letter-spacing: 1px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-info a i {
+  font-size: 1.4rem;
+}
+
+/* Hover effect */
+.contact-info a:hover {
+  color: #ff5722;
+  transform: translateY(-2px);
+}
+
+/* Address text */
+.address {
+  font-style: normal;
+  line-height: 1.8;
+}
+
+.address p {
+  margin: 4px 0;
+  font-size: 1rem;
+  color: #ffffffb5;
 }
