@@ -43,7 +43,7 @@ This project focuses on elegant UI/UX, smooth animations, and performance-friend
 
 1. **Clone the repository**
    ```bash
-    https://github.com/CodeWithPurnendra/Portfolio-page.git
+    cd https://github.com/CodeWithPurnendra/Portfolio-page.git
    ```
 2. cd portfolio
 3. Run locally
